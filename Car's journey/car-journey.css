@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+.sky {
+    background: linear-gradient(rgb(0, 136, 255) 10%, rgb(105, 185, 255) 30%, white);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.land {
+    background: linear-gradient(rgb(0, 255, 136), rgb(0, 172, 92), rgb(0, 127, 68));
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+img#car {
+    width: 25%; 
+    height: auto; 
+    position: absolute; 
+    left: 5%; 
+    bottom: 10%;
+    transform: rotateY(180deg);
+    z-index: 2;
+    animation: drive 5s forwards infinite;
+
+}
+
+@keyframes drive {
+    0% {left: -50%;}
+    100%{left: 120%;}
+    
+}
